@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacto B2B - Solicite cotización, agende reunión o pida muestras de fibra de alpaca premium. Respuesta en 24-48 horas.">
+    <meta name="keywords" content="cotización alpaca, muestras fibra alpaca, contacto B2B, reunión virtual, alpaca link contacto">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contacto B2B - Cotización Fibra de Alpaca | Alpaca Link">
+    <meta property="og:description" content="Solicite cotización, muestras o agende reunión. Respuesta en 24-48 horas.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alpaca-link.com/contacto.html">
+
+    <title>Contacto B2B | Cotización Fibra de Alpaca | Alpaca Link</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="alpaca-link-images/alpaca-link-logo-no-background-png.png">
+    <link rel="apple-touch-icon" href="alpaca-link-images/alpaca-link-logo-no-background-png.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="src/fontawesome/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/components.css">
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/contacto-page.css">
+    <link rel="stylesheet" href="src/css/footer.css">
+    <link rel="stylesheet" href="src/css/process-updates.css">
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="main-header" id="mainHeader">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="alpaca-link-images/alpaca-link-logo-no-background-png.png" alt="Alpaca Link Logo">
+                    </a>
+                </div>
+
+                <nav class="main-nav" id="mainNav">
+                    <ul>
+                        <li><a href="index.html" class="nav-link">INICIO</a></li>
+                        <li><a href="nosotros.html" class="nav-link">NOSOTROS</a></li>
+                        <li><a href="productos.html" class="nav-link">PRODUCTOS</a></li>
+                        <li><a href="contacto.html" class="nav-link active">CONTACTO</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <div class="language-selector" style="display: none;">
+                        <button class="lang-btn active" data-lang="es">
+                            <img src="alpaca-link-images/bandera-espanol.png" alt="Español"> ES
+                        </button>
+                        <button class="lang-btn" data-lang="en">
+                            <img src="alpaca-link-images/bandera-ingles.png" alt="English"> EN
+                        </button>
+                    </div>
+                    <a href="#cotizacion" class="btn btn-primary">INICIAR EVALUACIÓN</a>
+                </div>
+
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== BREADCRUMB ========== -->
+    <nav class="breadcrumb" aria-label="breadcrumb">
+        <div class="container">
+            <ol>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="separator">/</li>
+                <li class="current">Contacto</li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- ========== HERO - OPCIONES DE CONTACTO ========== -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>HABLEMOS DE SU PROYECTO</h1>
+            <p class="hero-subtitle">Dos formas de comenzar una relación comercial</p>
+
+            <div class="contact-options-grid">
+
+                <!-- OPCIÓN 1: EVALUACIÓN -->
+                <div class="contact-option">
+                    <div class="option-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h2>EVALUACIÓN DE PROYECTO</h2>
+                    <p class="option-description">Analizamos su diseño y determinamos costos exactos</p>
+                    <div class="option-time">⏱ Respuesta en 24-48h</div>
+                    <div class="option-ideal">
+                        <strong>Proceso:</strong>
+                        <ul>
+                            <li>Enviamos cotización de muestra</li>
+                            <li>Desarrollamos prototipo</li>
+                            <li>Determinamos costo exacto</li>
+                        </ul>
+                    </div>
+                    <a href="#cotizacion" class="btn btn-primary btn-block">INICIAR EVALUACIÓN →</a>
+                </div>
+
+                <!-- OPCIÓN 2: MUESTRAS -->
+                <div class="contact-option highlight">
+                    <div class="option-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h2>SOLICITAR MUESTRAS</h2>
+                    <p class="option-description">Reciba muestras físicas para evaluación de calidad</p>
+                    <div class="option-time">📦 3-5 días envío</div>
+                    <div class="option-ideal">
+                        <strong>Ideal para:</strong>
+                        <ul>
+                            <li>Evaluación de calidad</li>
+                            <li>Desarrollo de colección</li>
+                            <li>Pruebas de producto</li>
+                        </ul>
+                    </div>
+                    <a href="#muestras" class="btn btn-primary btn-block">PEDIR MUESTRAS →</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FORMULARIO COTIZACIÓN ========== -->
+    <section id="cotizacion" class="form-section">
+        <div class="container">
+            <div class="form-header">
+                <h2>SOLICITAR COTIZACIÓN</h2>
+                <p>Complete los datos esenciales y nos pondremos en contacto en 24-48 horas hábiles</p>
+            </div>
+
+            <form id="cotizacionForm" class="contact-form">
+
+                <div class="form-legend">
+                    <p><span class="required">*</span> Campos obligatorios</p>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo <span class="required">*</span></label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email corporativo <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="empresa">Empresa <span class="required">*</span></label>
+                        <input type="text" id="empresa" name="empresa" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pais">País <span class="required">*</span></label>
+                        <select id="pais" name="pais" required>
+                            <option value="">Seleccione...</option>
+                            <option value="AR">Argentina</option>
+                            <option value="BO">Bolivia</option>
+                            <option value="BR">Brasil</option>
+                            <option value="CL">Chile</option>
+                            <option value="CO">Colombia</option>
+                            <option value="CR">Costa Rica</option>
+                            <option value="EC">Ecuador</option>
+                            <option value="ES">España</option>
+                            <option value="US">Estados Unidos</option>
+                            <option value="MX">México</option>
+                            <option value="PE">Perú</option>
+                            <option value="UY">Uruguay</option>
+                            <option value="VE">Venezuela</option>
+                            <option value="OTHER">Otro</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="telefono">Teléfono / WhatsApp</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+51 999 999 999">
+                    </div>
+                    <div class="form-group">
+                        <label for="cargo">Cargo</label>
+                        <input type="text" id="cargo" name="cargo" placeholder="Director de Compras, Diseñador, etc.">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Producto de interés <span class="required">*</span></label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="producto[]" value="hilado" required>
+                            <span>Hilado artesanal</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="producto[]" value="manufactura">
+                            <span>Servicios de manufactura/OEM</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="volumen">Volumen aproximado <span class="required">*</span></label>
+                        <select id="volumen" name="volumen" required>
+                            <option value="">Seleccione...</option>
+                            <option value="< 50kg">Menos de 50 kg</option>
+                            <option value="50-200kg">50 - 200 kg</option>
+                            <option value="200-500kg">200 - 500 kg</option>
+                            <option value="500-1000kg">500 - 1,000 kg</option>
+                            <option value="> 1000kg">Más de 1,000 kg</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="plazo">Plazo de entrega esperado</label>
+                        <select id="plazo" name="plazo">
+                            <option value="">Seleccione...</option>
+                            <option value="urgente">Lo antes posible</option>
+                            <option value="1-3-meses">1-3 meses</option>
+                            <option value="3-6-meses">3-6 meses</option>
+                            <option value="flexible">Flexible</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="temporada">Época de producción deseada</label>
+                        <select id="temporada" name="temporada">
+                            <option value="">Seleccione...</option>
+                            <option value="alta">Mayo - Noviembre (Temporada Alta)</option>
+                            <option value="baja">Diciembre - Abril (Ideal muestras)</option>
+                            <option value="flexible">Flexible</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="tecnica">Técnica de tejido requerida</label>
+                        <select id="tecnica" name="tecnica">
+                            <option value="">Seleccione...</option>
+                            <option value="jersey">Jersey</option>
+                            <option value="jacquard">Jacquard</option>
+                            <option value="punto">Punto</option>
+                            <option value="todas">Todas las técnicas</option>
+                            <option value="no-se">No estoy seguro</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>¿Cuenta con alguno de estos elementos?</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="elementos[]" value="ficha-tecnica">
+                            <span>Ficha técnica</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="elementos[]" value="diseno">
+                            <span>Diseño o bosquejo</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="elementos[]" value="foto">
+                            <span>Foto de inspiración</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="elementos[]" value="muestra-fisica">
+                            <span>Muestra física</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje / Descripción del proyecto <span class="required">*</span></label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Describa brevemente su proyecto, especificaciones técnicas, cantidades específicas, o cualquier información relevante..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="privacidad" required>
+                            <span>Acepto la <a href="#">política de privacidad</a> <span class="required">*</span></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-submit">
+                    <button type="submit" class="btn btn-primary btn-lg">ENVIAR SOLICITUD</button>
+                    <p class="form-note">
+                        ✓ Respuesta en 24-48 horas hábiles<br>
+                        ✓ Información confidencial<br>
+                        ✓ Sin compromiso
+                    </p>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- ========== SOLICITUD DE MUESTRAS ========== -->
+    <section id="muestras" class="form-section samples-section">
+        <div class="container">
+            <div class="form-header">
+                <h2>SOLICITAR MUESTRAS FÍSICAS</h2>
+                <p>Reciba muestras de nuestros productos para evaluación de calidad</p>
+
+                <div class="samples-important">
+                    <h4>IMPORTANTE:</h4>
+                    <ul>
+                        <li><strong>Procesamiento:</strong> 1-5 días hábiles según complejidad</li>
+                        <li><strong>Hilado:</strong> Lo que tenemos en stock disponible</li>
+                        <li><strong>Tejido de punto:</strong> Desarrollo personalizado según requerimiento</li>
+                        <li><strong>Pago:</strong> 50-100% adelantado para desarrollo</li>
+                        <li><strong>Mejor época:</strong> Diciembre - Abril (temporada baja)</li>
+                        <li><strong>Envío internacional:</strong> A cargo del solicitante</li>
+                    </ul>
+                    <p style="margin-top: 10px; color: #8C3730;"><strong>Nota:</strong> Para determinar tiempo y costo exacto necesitamos saber: técnica de tejido requerida, tipo de fibra, y complejidad del diseño.</p>
+                </div>
+            </div>
+
+            <form id="muestrasForm" class="contact-form">
+
+                <div class="form-legend">
+                    <p><span class="required">*</span> Campos obligatorios</p>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombreMuestras">Nombre completo <span class="required">*</span></label>
+                        <input type="text" id="nombreMuestras" name="nombreMuestras" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailMuestras">Email corporativo <span class="required">*</span></label>
+                        <input type="email" id="emailMuestras" name="emailMuestras" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="empresaMuestras">Empresa <span class="required">*</span></label>
+                        <input type="text" id="empresaMuestras" name="empresaMuestras" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefonoMuestras">Teléfono <span class="required">*</span></label>
+                        <input type="tel" id="telefonoMuestras" name="telefonoMuestras" required placeholder="+51 999 999 999">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="paisMuestras">País <span class="required">*</span></label>
+                        <select id="paisMuestras" name="paisMuestras" required>
+                            <option value="">Seleccione...</option>
+                            <option value="AR">Argentina</option>
+                            <option value="BO">Bolivia</option>
+                            <option value="BR">Brasil</option>
+                            <option value="CL">Chile</option>
+                            <option value="CO">Colombia</option>
+                            <option value="US">Estados Unidos</option>
+                            <option value="ES">España</option>
+                            <option value="MX">México</option>
+                            <option value="PE">Perú</option>
+                            <option value="OTHER">Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ciudad">Ciudad <span class="required">*</span></label>
+                        <input type="text" id="ciudad" name="ciudad" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Tipo de muestra <span class="required">*</span></label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="tipoMuestra[]" value="hilado" required>
+                            <span>Hilado artesanal (Simple, Retorcido, Peinado)</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="tipoMuestra[]" value="productos">
+                            <span>Productos terminados (Accesorios, Home-deco)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="proposito">Propósito de las muestras / Descripción del proyecto <span class="required">*</span></label>
+                    <textarea id="proposito" name="proposito" rows="4" required placeholder="Describa brevemente el uso que dará a las muestras, volumen estimado futuro, etc."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="aceptoCondiciones" required>
+                            <span>Entiendo que el costo de envío internacional corre por mi cuenta y acepto la <a href="#">política de muestras</a> <span class="required">*</span></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-submit">
+                    <button type="submit" class="btn btn-primary btn-lg">SOLICITAR MUESTRAS</button>
+                    <p class="form-note">
+                        Nos contactaremos para confirmar disponibilidad y<br>
+                        coordinar los detalles del envío (cotización incluida)
+                    </p>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- ========== CONTACTO DIRECTO ========== -->
+    <section class="direct-contact-section">
+        <div class="container">
+            <h2>¿PREFIERE CONTACTO DIRECTO?</h2>
+
+            <div class="contact-methods">
+
+                <div class="contact-method">
+                    <div class="method-icon"><i class="fab fa-whatsapp"></i></div>
+                    <h3>WHATSAPP</h3>
+                    <p><strong>+51 948 734 691</strong></p>
+                    <p class="method-note">Respuesta rápida</p>
+                    <a href="https://wa.me/51948734691" target="_blank" class="btn btn-secondary">Abrir WhatsApp</a>
+                </div>
+
+                <div class="contact-method">
+                    <div class="method-icon"><i class="fas fa-phone"></i></div>
+                    <h3>TELÉFONO</h3>
+                    <p><strong>+51 985 070 700</strong></p>
+                    <p class="method-note">Lun-Vie 9am-6pm GMT-5</p>
+                    <a href="tel:+51985070700" class="btn btn-secondary">Llamar</a>
+                </div>
+
+            </div>
+
+            <div class="office-info">
+                <h3>OFICINA PRINCIPAL</h3>
+                <p><strong>Alpaca Link</strong></p>
+                <p>Lima, Perú</p>
+
+                <h4 class="mt-2">Operaciones:</h4>
+                <p>Comunidades de Antauta y Ajoyani<br>
+                Región Puno, Perú</p>
+            </div>
+
+            <div class="social-section">
+                <h3>REDES SOCIALES</h3>
+                <div class="social-links-large">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FAQ CONTACTO ========== -->
+    <section class="faq-contact-section">
+        <div class="container">
+            <h2>PREGUNTAS SOBRE EL PROCESO</h2>
+
+            <div class="faq-search">
+                <input type="text" id="faqSearch" placeholder="Buscar en preguntas frecuentes...">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <div class="faq-list">
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Cuánto demora recibir una respuesta?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>24-48 horas hábiles garantizado. Nos esforzamos por responder lo más pronto posible, especialmente para consultas urgentes.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿En qué idioma puedo comunicarme?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ofrecemos atención en Español e Inglés. Nuestro equipo está capacitado para atender clientes internacionales.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Me cobran por la cotización?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No, las cotizaciones son completamente gratuitas y sin compromiso de compra. Queremos que tenga toda la información antes de decidir.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Qué información necesitan para cotizar?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>Para una cotización precisa necesitamos:</strong><br>
+                        • Ficha técnica, diseño, bosquejo o foto de inspiración<br>
+                        • Técnica de tejido deseada (jersey, jacquard, punto, etc.)<br>
+                        • Tipo de fibra y calidad requerida<br>
+                        • Cantidad aproximada (aunque el MOQ final se determina con la muestra)<br>
+                        • Temporada de producción (alta: Mayo-Nov, baja: Dic-Abr)<br>
+                        <em>Nota: Primero desarrollamos una muestra para determinar costos exactos.</em></p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Puedo hablar con alguien inmediatamente?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>WhatsApp (+51 948 734 691) es la vía más rápida durante horario laboral (Lun-Vie 9am-6pm GMT-5). También puede llamarnos directamente al +51 985 070 700.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Qué pasa después de enviar el formulario?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <ol>
+                            <li>Recibe confirmación automática por email</li>
+                            <li>Nuestro equipo revisa su solicitud (24-48h)</li>
+                            <li>Lo contactamos con una propuesta inicial alineada a su necesidad</li>
+                            <li>Ajustamos la oferta inicial según el feedback que nos provea</li>
+                            <li>Enviamos oferta formal detallada según su requerimiento</li>
+                        </ol>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="alpaca-link-images/alpaca-link-logo-no-background-png.png" alt="Alpaca Link">
+                    </div>
+                    <p>Hilados y manufactura de alpaca</p>
+                    <p>Puno, Perú</p>
+                    <p class="footer-tagline">Nuestros talleres artesanales a su almacén</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>PRODUCTOS</h4>
+                    <ul>
+                        <li><a href="productos.html#hilado">Hilado grueso</a></li>
+                        <li><a href="productos.html#manufactura">Manufactura textil</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>EMPRESA</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>CONTACTO</h4>
+                    <p><strong>WhatsApp:</strong><br>+51 948 734 691</p>
+                    <p><strong>Teléfono:</strong><br>+51 985 070 700</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Alpaca Link | <a href="#">Privacidad</a> | <a href="#">Términos</a></p>
+                <p>Desarrollo: Itaca Marketing x <a href="mailto:mrchrear@gmail.com">Christian Reyes</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="src/js/main.js"></script>
+    <script src="src/js/contacto.js"></script>
+    <script src="src/js/process-modal.js"></script>
+</body>
+</html>

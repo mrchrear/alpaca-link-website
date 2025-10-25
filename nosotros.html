@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sobre Alpaca Link - Plataforma comercial de fibra de alpaca premium. Conoce nuestra misión, visión y compromiso con los artesanos de Puno.">
+    <meta name="keywords" content="alpaca link, sobre nosotros, mision, vision, valores, Puno, Peru, fibra de alpaca">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sobre Nosotros - Alpaca Link">
+    <meta property="og:description" content="Plataforma comercial diseñada para conectar productores textiles de Puno con mercados internacionales.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alpaca-link.com/nosotros.html">
+
+    <title>Sobre Nosotros | Alpaca Link - Nuestra Historia y Misión</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="alpaca-link-images/alpaca-link-logo-no-background-png.png">
+    <link rel="apple-touch-icon" href="alpaca-link-images/alpaca-link-logo-no-background-png.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="src/fontawesome/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/components.css">
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/sections.css">
+    <link rel="stylesheet" href="src/css/footer.css">
+    <link rel="stylesheet" href="src/css/process-updates.css">
+
+    <style>
+        /* Estilos específicos para la página Sobre Nosotros */
+        .about-hero {
+            background: linear-gradient(135deg, #BF1120 0%, #A62C21 100%);
+            padding: 100px 0 60px;
+            color: white;
+            text-align: center;
+        }
+
+        .about-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .about-hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .about-section {
+            padding: 80px 0;
+        }
+
+        .about-section:nth-child(even) {
+            background-color: #F2F2F2;
+        }
+
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .about-content h2 {
+            color: #BF1120;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .about-content h3 {
+            color: #A62C21;
+            font-size: 1.8rem;
+            margin: 30px 0 20px;
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #1A1A1A;
+            margin-bottom: 20px;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .value-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border-left: 4px solid #A62C21;
+        }
+
+        .value-card h4 {
+            color: #BF1120;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        .value-card p {
+            color: #595646;
+            line-height: 1.7;
+        }
+
+        .objectives-list {
+            margin-top: 30px;
+        }
+
+        .objective-item {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border-left: 4px solid #A62C21;
+        }
+
+        .objective-item h4 {
+            color: #BF1120;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .objective-item p {
+            color: #595646;
+            margin: 0;
+        }
+
+        .partners-section {
+            background: linear-gradient(to right, #F2F2F2, #FFFFFF);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .partners-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .partners-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .partner-name {
+            font-size: 1.2rem;
+            color: #8C3730;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .about-hero h1 {
+                font-size: 2rem;
+            }
+
+            .about-hero p {
+                font-size: 1rem;
+            }
+
+            .about-content h2 {
+                font-size: 2rem;
+            }
+
+            .about-content h3 {
+                font-size: 1.5rem;
+            }
+
+            .about-content p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="main-header" id="mainHeader">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="alpaca-link-images/alpaca-link-logo-no-background-png.png" alt="Alpaca Link Logo">
+                    </a>
+                </div>
+
+                <nav class="main-nav" id="mainNav">
+                    <ul>
+                        <li><a href="index.html" class="nav-link">INICIO</a></li>
+                        <li><a href="nosotros.html" class="nav-link active">NOSOTROS</a></li>
+                        <li><a href="productos.html" class="nav-link">PRODUCTOS</a></li>
+                        <li><a href="contacto.html" class="nav-link">CONTACTO</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <div class="language-selector" style="display: none;">
+                        <button class="lang-btn active" data-lang="es">
+                            <img src="alpaca-link-images/bandera-espanol.png" alt="Español"> ES
+                        </button>
+                        <button class="lang-btn" data-lang="en">
+                            <img src="alpaca-link-images/bandera-ingles.png" alt="English"> EN
+                        </button>
+                    </div>
+                    <a href="contacto.html" class="btn btn-primary">INICIAR EVALUACIÓN</a>
+                </div>
+
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== BREADCRUMB ========== -->
+    <div class="breadcrumb">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <a href="index.html">Inicio</a>
+                <span class="separator">/</span>
+                <span class="current">Nosotros</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="about-hero">
+        <div class="container">
+            <h1>Sobre Nosotros</h1>
+            <p>Conectando artesanos de Puno con mercados internacionales a través de la fibra de alpaca premium</p>
+        </div>
+    </section>
+
+    <!-- ========== QUIENES SOMOS ========== -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2>¿Quiénes somos?</h2>
+                <p>
+                    Alpaca LINK es una plataforma comercial diseñada para dar soporte tanto a productores textiles como a clientes. Nuestra propuesta fue creada para promover la competitividad y la integración a los mercados internacionales, partiendo de la valiosa cadena productiva de la alpaca en la región de Puno, una de las principales zonas productoras de la más fina fibra de alpaca en Perú y Sudamérica.
+                </p>
+                <p>
+                    A través de un catálogo virtual, presentamos una cuidada selección de productos de artesanos y productores textiles, detallando sus características técnicas y capacidades de producción para facilitar el proceso de compra. Esta plataforma forma parte de un importante proyecto de Fortalecimiento de la cadena productiva de la alpaca, promovido por MINSUR y operado por INTERLINKS CONSULTING GROUP S.A.C.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MISION Y VISION ========== -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2>Nuestra Misión y Visión</h2>
+
+                <h3>Nuestra Misión</h3>
+                <p>
+                    Facilitar la articulación comercial entre el artesano organizado y los compradores de productos textiles elaborados con fibra de alpaca.
+                </p>
+
+                <h3>Nuestra Visión</h3>
+                <p>
+                    Posicionar los productos de fibra de alpaca en el mercado internacional, consolidando a Alpaca LINK como una herramienta de soporte comercial que garantiza la calidad y sostenibilidad de los procesos de producción.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== VALORES ========== -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2>Nuestros Valores</h2>
+                <p style="text-align: center; margin-bottom: 40px;">
+                    Nuestras acciones se guían por un profundo compromiso con la excelencia y la ética.
+                </p>
+
+                <div class="values-grid">
+                    <div class="value-card">
+                        <h4><i class="fas fa-award"></i> Calidad</h4>
+                        <p>Ofrecemos la calidad integral de nuestros colaboradores, procesos y productos, de acuerdo a las actuales exigencias del mercado.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <h4><i class="fas fa-users"></i> Trabajo en Equipo</h4>
+                        <p>Ponemos a disposición del equipo nuestra confianza, talentos y entusiasmo para alcanzar los objetivos comunes con resultados superiores.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <h4><i class="fas fa-lightbulb"></i> Innovación</h4>
+                        <p>Innovamos constantemente los procesos comerciales, de acuerdo a las nuevas tendencias de mercado y las necesidades de los clientes.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <h4><i class="fas fa-handshake"></i> Respeto</h4>
+                        <p>Valoramos a todas las personas en la empresa y cumplimos con las normas y políticas internas, velando por el buen clima laboral.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <h4><i class="fas fa-leaf"></i> Responsabilidad Social y Ambiental</h4>
+                        <p>Estamos comprometidos con el uso racional y responsable de los recursos, generando productos que mejoren la calidad de vida de nuestros colaboradores, clientes y el cuidado del medio ambiente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== OBJETIVOS ========== -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2>Nuestros Objetivos</h2>
+                <p style="text-align: center; margin-bottom: 40px;">
+                    Trabajamos para generar un impacto positivo y duradero en toda la cadena de valor.
+                </p>
+
+                <div class="objectives-list">
+                    <div class="objective-item">
+                        <h4><i class="fas fa-chart-line"></i> Desarrollo Económico y Social</h4>
+                        <p>Generar una demanda sostenible para los productores textiles de la zona de Puno.</p>
+                    </div>
+
+                    <div class="objective-item">
+                        <h4><i class="fas fa-trophy"></i> Competitividad</h4>
+                        <p>Incrementar la productividad de los artesanos a través de la mejora continua de sus capacidades.</p>
+                    </div>
+
+                    <div class="objective-item">
+                        <h4><i class="fas fa-globe-americas"></i> Acceso a Mercados</h4>
+                        <p>Diseñar estrategias para acceder a nuevos mercados con productos de mayor valor agregado.</p>
+                    </div>
+
+                    <div class="objective-item">
+                        <h4><i class="fas fa-seedling"></i> Sostenibilidad</h4>
+                        <p>Comunicar el impacto social y ambiental positivo a lo largo de la cadena productiva como resultado del proceso comercial.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PARTNERS SECTION ========== -->
+    <section class="partners-section">
+        <div class="container">
+            <div class="partners-content">
+                <h2 style="color: #BF1120; margin-bottom: 20px;">Proyecto Respaldado Por</h2>
+                <p style="color: #595646; font-size: 1.1rem; line-height: 1.8;">
+                    Esta plataforma forma parte del proyecto de Fortalecimiento de la cadena productiva de la alpaca
+                </p>
+                <div class="partners-logos">
+                    <div class="partner-name">MINSUR</div>
+                    <div class="partner-name">INTERLINKS CONSULTING GROUP S.A.C.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA SECTION ========== -->
+    <section class="cta-section" style="background: linear-gradient(135deg, #BF1120 0%, #A62C21 100%); padding: 80px 0; text-align: center;">
+        <div class="container">
+            <h2 style="color: white; font-size: 2.5rem; margin-bottom: 20px;">¿Listo para trabajar con nosotros?</h2>
+            <p style="color: white; font-size: 1.2rem; margin-bottom: 30px;">
+                Conectamos la tradición artesanal de Puno con su negocio internacional
+            </p>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <a href="productos.html" class="btn btn-secondary btn-lg">
+                    Ver Productos
+                </a>
+                <a href="contacto.html" class="btn btn-primary btn-lg">
+                    Iniciar Evaluación
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="alpaca-link-images/alpaca-link-logo-no-background-png.png" alt="Alpaca Link">
+                    </div>
+                    <p>Hilados y manufactura de alpaca</p>
+                    <p>Puno, Perú</p>
+                    <p class="footer-tagline">Nuestros talleres artesanales a su almacén</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>PRODUCTOS</h4>
+                    <ul>
+                        <li><a href="productos.html#hilado">Hilado grueso</a></li>
+                        <li><a href="productos.html#manufactura">Manufactura textil</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>EMPRESA</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>CONTACTO</h4>
+                    <p><strong>WhatsApp:</strong><br>+51 948 734 691</p>
+                    <p><strong>Teléfono:</strong><br>+51 985 070 700</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Alpaca Link | <a href="#">Privacidad</a> | <a href="#">Términos</a></p>
+                <p>Desarrollo: Itaca Marketing x <a href="mailto:mrchrear@gmail.com">Christian Reyes</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="src/js/main.js"></script>
+    <script src="src/js/process-modal.js"></script>
+</body>
+</html>
