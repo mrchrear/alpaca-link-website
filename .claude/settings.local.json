@@ -6,7 +6,15 @@
       "Bash(del \"src\\css\\visual-fixes-final.css\")",
       "Bash(git --version)",
       "Bash(git init:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(gh --version:*)",
+      "Bash(gh auth:*)",
+      "Bash(gh repo create:*)",
+      "Bash(gh repo edit:*)",
+      "Bash(git push)",
+      "Bash(gh api:*)",
+      "Bash(start index.html)"
     ],
     "deny": [],
     "ask": []

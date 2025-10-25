@@ -36,27 +36,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="src/fontawesome/css/all.min.css">
+    <!-- Font Awesome - Only load used icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="src/css/main.css">
-    <link rel="stylesheet" href="src/css/components.css">
-    <link rel="stylesheet" href="src/css/header.css">
-    <link rel="stylesheet" href="src/css/index-redesign.css">
-    <link rel="stylesheet" href="src/css/footer.css">
-    <link rel="stylesheet" href="src/css/process-updates.css">
-    <link rel="stylesheet" href="src/css/index-professional-fix.css">
-    <link rel="stylesheet" href="src/css/mobile-optimization.css">
-
-    <!-- Master Override - MUST BE LAST -->
-    <link rel="stylesheet" href="src/css/master-override.css">
-
-    <!-- FINAL DESIGN FIX - ABSOLUTE LAST -->
-    <link rel="stylesheet" href="src/css/index-final-design.css">
-
-    <!-- READABILITY FIX - CRITICAL -->
-    <link rel="stylesheet" href="src/css/readability-fix.css">
+    <!-- Optimized CSS - 3 files instead of 17 -->
+    <link rel="stylesheet" href="src/css/alpaca-base.css">
+    <link rel="stylesheet" href="src/css/alpaca-layout.css">
+    <link rel="stylesheet" href="src/css/alpaca-responsive.css">
 </head>
 <body>
 
@@ -65,8 +53,8 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <a href="index.html">
-                        <img src="alpaca-link-images/alpaca-link-logo-no-background-png.png" alt="Alpaca Link Logo">
+                    <a href="index.html" aria-label="Alpaca Link - Página principal">
+                        <img src="alpaca-link-images/alpaca-link-logo-no-background-png.png" alt="Alpaca Link - Proveedor de fibra de alpaca premium B2B desde Perú">
                     </a>
                 </div>
 
@@ -91,10 +79,10 @@
                     <a href="contacto.html" class="btn btn-primary">INICIAR EVALUACIÓN</a>
                 </div>
 
-                <button class="mobile-menu-toggle" id="mobileMenuToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="mainNav">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
                 </button>
             </div>
         </div>
@@ -103,7 +91,7 @@
     <!-- ========== SECCIÓN 1: HERO ========== -->
     <section class="hero-section" id="inicio">
         <div class="hero-background" data-parallax>
-            <img src="src/images/hero/hero-alpacas-andes.jpg" alt="Alpacas en los Andes" class="hero-image">
+            <img src="src/images/hero/hero-alpacas-andes.jpg" alt="Rebaño de alpacas pastando en las alturas de los Andes peruanos a 4,000 metros de altitud" class="hero-image">
             <div class="hero-overlay"></div>
         </div>
 
@@ -236,7 +224,7 @@
 
             <!-- Imagen del proceso de esquila -->
             <div style="margin: 30px 0; text-align: center;">
-                <img src="src/images/products/proceso-esquila.png" alt="Proceso de esquila de alpaca" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" loading="lazy">
+                <img src="src/images/products/proceso-esquila.png" alt="Artesano peruano realizando esquila tradicional de alpaca en las comunidades de Puno a 4,850 metros de altitud" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" loading="lazy">
                 <p style="margin-top: 10px; color: #595646; font-style: italic;">Proceso tradicional de esquila en las alturas de Puno</p>
             </div>
 
@@ -666,11 +654,11 @@
             <div class="faq-accordion">
                 <!-- PRIMERA PREGUNTA: POR QUÉ NO HAY PRECIOS -->
                 <div class="faq-item" style="border: 2px solid #BF1120; background: #F2F2F2;">
-                    <button class="faq-question">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
                         <span style="color: #BF1120; font-weight: 700;">⭐ ¿Por qué no publican precios fijos?</span>
-                        <i class="fas fa-chevron-down"></i>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </button>
-                    <div class="faq-answer">
+                    <div class="faq-answer" id="faq-answer-1" aria-hidden="true">
                         <p><strong>Cada proyecto textil es único y el costo depende de múltiples factores:</strong></p>
                         <ul style="margin: 15px 0;">
                             <li>✓ Calidad de fibra seleccionada (baby alpaca, superfina, etc.)</li>
@@ -688,11 +676,11 @@
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
                         <span>¿Cuál es el pedido mínimo?</span>
-                        <i class="fas fa-chevron-down"></i>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </button>
-                    <div class="faq-answer">
+                    <div class="faq-answer" id="faq-answer-2" aria-hidden="true">
                         <p><strong>El MOQ se determina después de evaluar su muestra inicial.</strong> Trabajamos en 2 etapas: primero desarrollamos una muestra (1-5 días) donde determinamos costos exactos según la calidad de fibra, técnica de tejido y complejidad. Luego cotizamos la producción basándonos en esa muestra.</p>
                     </div>
                 </div>

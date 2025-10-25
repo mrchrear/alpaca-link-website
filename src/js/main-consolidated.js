@@ -37,9 +37,15 @@
         // Toggle menu
         toggle.addEventListener('click', function(e) {
             e.stopPropagation();
+            const isActive = toggle.classList.contains('active');
+
             toggle.classList.toggle('active');
             nav.classList.toggle('active');
             document.body.classList.toggle('mobile-menu-open');
+
+            // Update ARIA attributes
+            toggle.setAttribute('aria-expanded', !isActive);
+            toggle.setAttribute('aria-label', !isActive ? 'Cerrar menú de navegación' : 'Abrir menú de navegación');
         });
 
         // Close on link click
@@ -184,19 +190,34 @@
 
         faqItems.forEach(item => {
             const question = item.querySelector('.faq-question');
-            if (!question) return;
+            const answer = item.querySelector('.faq-answer');
+            if (!question || !answer) return;
 
             question.addEventListener('click', function() {
                 const isActive = item.classList.contains('active');
 
                 // Close all
                 faqItems.forEach(otherItem => {
+                    const otherQuestion = otherItem.querySelector('.faq-question');
+                    const otherAnswer = otherItem.querySelector('.faq-answer');
+
                     otherItem.classList.remove('active');
+                    if (otherQuestion) {
+                        otherQuestion.setAttribute('aria-expanded', 'false');
+                    }
+                    if (otherAnswer) {
+                        otherAnswer.setAttribute('aria-hidden', 'true');
+                    }
                 });
 
                 // Toggle current
                 if (!isActive) {
                     item.classList.add('active');
+                    question.setAttribute('aria-expanded', 'true');
+                    answer.setAttribute('aria-hidden', 'false');
+                } else {
+                    question.setAttribute('aria-expanded', 'false');
+                    answer.setAttribute('aria-hidden', 'true');
                 }
             });
         });
