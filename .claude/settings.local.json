@@ -14,7 +14,9 @@
       "Bash(gh repo edit:*)",
       "Bash(git push)",
       "Bash(gh api:*)",
-      "Bash(start index.html)"
+      "Bash(start index.html)",
+      "Bash(awk:*)",
+      "Bash(start contacto.html)"
     ],
     "deny": [],
     "ask": []
