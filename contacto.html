@@ -28,8 +28,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css">
 
-    <!-- CSS - Global + Page Specific -->
+    <!-- CSS - Global + Components + Page Specific -->
     <link rel="stylesheet" href="src/css/alpaca-global.css">
+    <link rel="stylesheet" href="src/css/alpaca-components.css">
     <link rel="stylesheet" href="src/css/contacto-styles.css">
 </head>
 <body>
@@ -39,17 +40,17 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="/">
                         <img src="alpaca-link-images/alpaca-link-logo-no-background-png.png" alt="Alpaca Link Logo">
                     </a>
                 </div>
 
                 <nav class="main-nav" id="mainNav">
                     <ul>
-                        <li><a href="index.html" class="nav-link">INICIO</a></li>
-                        <li><a href="nosotros.html" class="nav-link">NOSOTROS</a></li>
-                        <li><a href="productos.html" class="nav-link">PRODUCTOS</a></li>
-                        <li><a href="contacto.html" class="nav-link active">CONTACTO</a></li>
+                        <li><a href="/" class="nav-link">INICIO</a></li>
+                        <li><a href="/nosotros" class="nav-link">NOSOTROS</a></li>
+                        <li><a href="/productos" class="nav-link">PRODUCTOS</a></li>
+                        <li><a href="/contacto" class="nav-link active">CONTACTO</a></li>
                     </ul>
                 </nav>
 
@@ -74,63 +75,144 @@
         </div>
     </header>
 
-    <!-- ========== BREADCRUMB ========== -->
-    <nav class="breadcrumb" aria-label="breadcrumb">
-        <div class="container">
-            <ol>
-                <li><a href="index.html">Inicio</a></li>
-                <li class="separator">/</li>
-                <li class="current">Contacto</li>
-            </ol>
-        </div>
-    </nav>
-
-    <!-- ========== HERO - OPCIONES DE CONTACTO ========== -->
+    <!-- ========== HERO - CONTACTO ========== -->
     <section class="contact-hero">
+        <div class="hero-background">
+            <img src="src/images/real-photos/artisan-clipboard-design.jpg" alt="Artesanas revisando diseños de proyectos textiles - evaluación profesional" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
         <div class="container">
-            <h1>HABLEMOS DE SU PROYECTO</h1>
-            <p class="hero-subtitle">Dos formas de comenzar una relación comercial</p>
+            <div class="hero-content">
+                <span class="hero-pretitle">CONTACTO B2B</span>
+                <h1>HAGAMOS REALIDAD<br>SU <span class="hero-highlight">PROYECTO TEXTIL</span></h1>
+                <p class="hero-description">Respuesta profesional en 24-48 horas | Asesoría especializada | Sin compromiso</p>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">24-48h</div>
+                        <div class="stat-label">Tiempo de respuesta</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">Idiomas (ES/EN)</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Confidencial</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== OPCIONES DE CONTACTO ========== -->
+    <section class="contact-options-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>¿CÓMO PREFIERE COMENZAR?</h2>
+                <p class="section-subtitle">Elija la opción que mejor se adapte a sus necesidades</p>
+            </div>
 
             <div class="contact-options-grid">
-
-                <!-- OPCIÓN 1: EVALUACIÓN -->
-                <div class="contact-option">
+                <div class="contact-option-card">
+                    <div class="option-number">01</div>
                     <div class="option-icon">
                         <i class="fas fa-microscope"></i>
                     </div>
-                    <h2>EVALUACIÓN DE PROYECTO</h2>
+                    <h3>EVALUACIÓN DE PROYECTO</h3>
                     <p class="option-description">Analizamos su diseño y determinamos costos exactos</p>
-                    <div class="option-time">⏱ Respuesta en 24-48h</div>
-                    <div class="option-ideal">
-                        <strong>Proceso:</strong>
+
+                    <div class="option-features">
+                        <div class="feature-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Respuesta en 24-48h</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                            <span>Cotización sin costo</span>
+                        </div>
+                    </div>
+
+                    <div class="option-process">
+                        <strong>PROCESO:</strong>
                         <ul>
                             <li>Enviamos cotización de muestra</li>
                             <li>Desarrollamos prototipo</li>
                             <li>Determinamos costo exacto</li>
                         </ul>
                     </div>
-                    <a href="#cotizacion" class="btn btn-primary btn-block">INICIAR EVALUACIÓN →</a>
+
+                    <a href="#cotizacion" class="btn btn-primary btn-block">
+                        <i class="fas fa-arrow-right"></i> INICIAR EVALUACIÓN
+                    </a>
                 </div>
 
-                <!-- OPCIÓN 2: MUESTRAS -->
-                <div class="contact-option highlight">
+                <div class="contact-option-card featured">
+                    <div class="featured-badge">POPULAR</div>
+                    <div class="option-number">02</div>
                     <div class="option-icon">
                         <i class="fas fa-box-open"></i>
                     </div>
-                    <h2>SOLICITAR MUESTRAS</h2>
+                    <h3>SOLICITAR MUESTRAS</h3>
                     <p class="option-description">Reciba muestras físicas para evaluación de calidad</p>
-                    <div class="option-time">📦 3-5 días envío</div>
-                    <div class="option-ideal">
-                        <strong>Ideal para:</strong>
+
+                    <div class="option-features">
+                        <div class="feature-item">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>Envío internacional</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>1-5 días procesamiento</span>
+                        </div>
+                    </div>
+
+                    <div class="option-process">
+                        <strong>IDEAL PARA:</strong>
                         <ul>
                             <li>Evaluación de calidad</li>
                             <li>Desarrollo de colección</li>
                             <li>Pruebas de producto</li>
                         </ul>
                     </div>
-                    <a href="#muestras" class="btn btn-primary btn-block">PEDIR MUESTRAS →</a>
+
+                    <a href="#muestras" class="btn btn-primary btn-block">
+                        <i class="fas fa-arrow-right"></i> PEDIR MUESTRAS
+                    </a>
                 </div>
 
+                <div class="contact-option-card">
+                    <div class="option-number">03</div>
+                    <div class="option-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>CONTACTO DIRECTO</h3>
+                    <p class="option-description">Hable directamente con nuestro equipo comercial</p>
+
+                    <div class="option-features">
+                        <div class="feature-item">
+                            <i class="fas fa-comments"></i>
+                            <span>Respuesta inmediata</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-user-tie"></i>
+                            <span>Asesoría personalizada</span>
+                        </div>
+                    </div>
+
+                    <div class="option-process">
+                        <strong>CANALES:</strong>
+                        <ul>
+                            <li>WhatsApp: +51 948 734 691</li>
+                            <li>Teléfono: +51 985 070 700</li>
+                            <li>Lun-Vie 9am-6pm (GMT-5)</li>
+                        </ul>
+                    </div>
+
+                    <a href="#contacto-directo" class="btn btn-secondary btn-block">
+                        <i class="fas fa-arrow-right"></i> VER OPCIONES
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -169,19 +251,45 @@
                         <label for="pais">País <span class="required">*</span></label>
                         <select id="pais" name="pais" required>
                             <option value="">Seleccione...</option>
-                            <option value="AR">Argentina</option>
-                            <option value="BO">Bolivia</option>
-                            <option value="BR">Brasil</option>
-                            <option value="CL">Chile</option>
-                            <option value="CO">Colombia</option>
-                            <option value="CR">Costa Rica</option>
-                            <option value="EC">Ecuador</option>
-                            <option value="ES">España</option>
-                            <option value="US">Estados Unidos</option>
-                            <option value="MX">México</option>
-                            <option value="PE">Perú</option>
-                            <option value="UY">Uruguay</option>
-                            <option value="VE">Venezuela</option>
+                            <optgroup label="América del Sur">
+                                <option value="AR">Argentina</option>
+                                <option value="BO">Bolivia</option>
+                                <option value="BR">Brasil</option>
+                                <option value="CL">Chile</option>
+                                <option value="CO">Colombia</option>
+                                <option value="EC">Ecuador</option>
+                                <option value="PE" selected>Perú</option>
+                                <option value="UY">Uruguay</option>
+                                <option value="VE">Venezuela</option>
+                            </optgroup>
+                            <optgroup label="América del Norte y Central">
+                                <option value="US">Estados Unidos</option>
+                                <option value="CA">Canadá</option>
+                                <option value="MX">México</option>
+                                <option value="CR">Costa Rica</option>
+                                <option value="PA">Panamá</option>
+                            </optgroup>
+                            <optgroup label="Europa">
+                                <option value="ES">España</option>
+                                <option value="FR">Francia</option>
+                                <option value="IT">Italia</option>
+                                <option value="DE">Alemania</option>
+                                <option value="GB">Reino Unido</option>
+                                <option value="PT">Portugal</option>
+                                <option value="NL">Países Bajos</option>
+                                <option value="BE">Bélgica</option>
+                                <option value="CH">Suiza</option>
+                            </optgroup>
+                            <optgroup label="Asia">
+                                <option value="JP">Japón</option>
+                                <option value="CN">China</option>
+                                <option value="KR">Corea del Sur</option>
+                                <option value="IN">India</option>
+                            </optgroup>
+                            <optgroup label="Oceanía">
+                                <option value="AU">Australia</option>
+                                <option value="NZ">Nueva Zelanda</option>
+                            </optgroup>
                             <option value="OTHER">Otro</option>
                         </select>
                     </div>
@@ -241,8 +349,8 @@
                         <label for="temporada">Época de producción deseada</label>
                         <select id="temporada" name="temporada">
                             <option value="">Seleccione...</option>
-                            <option value="alta">Mayo - Noviembre (Temporada Alta)</option>
-                            <option value="baja">Diciembre - Abril (Ideal muestras)</option>
+                            <option value="alta">Marzo - Noviembre (Temporada Alta)</option>
+                            <option value="baja">Diciembre - Agosto (Ideal muestras)</option>
                             <option value="flexible">Flexible</option>
                         </select>
                     </div>
@@ -322,7 +430,7 @@
                         <li><strong>Hilado:</strong> Lo que tenemos en stock disponible</li>
                         <li><strong>Tejido de punto:</strong> Desarrollo personalizado según requerimiento</li>
                         <li><strong>Pago:</strong> 50-100% adelantado para desarrollo</li>
-                        <li><strong>Mejor época:</strong> Diciembre - Abril (temporada baja)</li>
+                        <li><strong>Mejor época:</strong> Diciembre - Agosto (temporada baja)</li>
                         <li><strong>Envío internacional:</strong> A cargo del solicitante</li>
                     </ul>
                     <p style="margin-top: 10px; color: #8C3730;"><strong>Nota:</strong> Para determinar tiempo y costo exacto necesitamos saber: técnica de tejido requerida, tipo de fibra, y complejidad del diseño.</p>
@@ -362,15 +470,45 @@
                         <label for="paisMuestras">País <span class="required">*</span></label>
                         <select id="paisMuestras" name="paisMuestras" required>
                             <option value="">Seleccione...</option>
-                            <option value="AR">Argentina</option>
-                            <option value="BO">Bolivia</option>
-                            <option value="BR">Brasil</option>
-                            <option value="CL">Chile</option>
-                            <option value="CO">Colombia</option>
-                            <option value="US">Estados Unidos</option>
-                            <option value="ES">España</option>
-                            <option value="MX">México</option>
-                            <option value="PE">Perú</option>
+                            <optgroup label="América del Sur">
+                                <option value="AR">Argentina</option>
+                                <option value="BO">Bolivia</option>
+                                <option value="BR">Brasil</option>
+                                <option value="CL">Chile</option>
+                                <option value="CO">Colombia</option>
+                                <option value="EC">Ecuador</option>
+                                <option value="PE" selected>Perú</option>
+                                <option value="UY">Uruguay</option>
+                                <option value="VE">Venezuela</option>
+                            </optgroup>
+                            <optgroup label="América del Norte y Central">
+                                <option value="US">Estados Unidos</option>
+                                <option value="CA">Canadá</option>
+                                <option value="MX">México</option>
+                                <option value="CR">Costa Rica</option>
+                                <option value="PA">Panamá</option>
+                            </optgroup>
+                            <optgroup label="Europa">
+                                <option value="ES">España</option>
+                                <option value="FR">Francia</option>
+                                <option value="IT">Italia</option>
+                                <option value="DE">Alemania</option>
+                                <option value="GB">Reino Unido</option>
+                                <option value="PT">Portugal</option>
+                                <option value="NL">Países Bajos</option>
+                                <option value="BE">Bélgica</option>
+                                <option value="CH">Suiza</option>
+                            </optgroup>
+                            <optgroup label="Asia">
+                                <option value="JP">Japón</option>
+                                <option value="CN">China</option>
+                                <option value="KR">Corea del Sur</option>
+                                <option value="IN">India</option>
+                            </optgroup>
+                            <optgroup label="Oceanía">
+                                <option value="AU">Australia</option>
+                                <option value="NZ">Nueva Zelanda</option>
+                            </optgroup>
                             <option value="OTHER">Otro</option>
                         </select>
                     </div>
@@ -474,87 +612,275 @@
     <!-- ========== FAQ CONTACTO ========== -->
     <section class="faq-contact-section">
         <div class="container">
-            <h2>PREGUNTAS SOBRE EL PROCESO</h2>
-
-            <div class="faq-search">
-                <input type="text" id="faqSearch" placeholder="Buscar en preguntas frecuentes...">
-                <i class="fas fa-search"></i>
+            <div class="section-header">
+                <h2>PREGUNTAS FRECUENTES</h2>
+                <p class="section-subtitle">Todo lo que necesita saber sobre nuestro proceso de contacto y cotización</p>
             </div>
 
-            <div class="faq-list">
+            <div class="faq-categories">
+                <button class="faq-category-btn active" data-category="all">
+                    <i class="fas fa-th"></i> Todas
+                </button>
+                <button class="faq-category-btn" data-category="general">
+                    <i class="fas fa-info-circle"></i> General
+                </button>
+                <button class="faq-category-btn" data-category="cotizacion">
+                    <i class="fas fa-file-invoice-dollar"></i> Cotización
+                </button>
+                <button class="faq-category-btn" data-category="muestras">
+                    <i class="fas fa-box-open"></i> Muestras
+                </button>
+                <button class="faq-category-btn" data-category="envios">
+                    <i class="fas fa-shipping-fast"></i> Envíos
+                </button>
+            </div>
 
-                <div class="faq-item">
+            <div class="faq-search">
+                <i class="fas fa-search"></i>
+                <input type="text" id="faqSearch" placeholder="Buscar en preguntas frecuentes...">
+            </div>
+
+            <div class="faq-grid">
+                <!-- GENERAL -->
+                <div class="faq-item" data-category="general">
                     <button class="faq-question">
+                        <i class="fas fa-clock"></i>
                         <span>¿Cuánto demora recibir una respuesta?</span>
-                        <span class="faq-icon">+</span>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
                     </button>
                     <div class="faq-answer">
-                        <p>24-48 horas hábiles garantizado. Nos esforzamos por responder lo más pronto posible, especialmente para consultas urgentes.</p>
+                        <p>Respondemos en <strong>24-48 horas hábiles garantizado</strong>. Nos esforzamos por responder lo más pronto posible, especialmente para consultas urgentes. Si necesita respuesta inmediata, use WhatsApp durante horario laboral.</p>
                     </div>
                 </div>
 
-                <div class="faq-item">
+                <div class="faq-item" data-category="general">
                     <button class="faq-question">
+                        <i class="fas fa-language"></i>
                         <span>¿En qué idioma puedo comunicarme?</span>
-                        <span class="faq-icon">+</span>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
                     </button>
                     <div class="faq-answer">
-                        <p>Ofrecemos atención en Español e Inglés. Nuestro equipo está capacitado para atender clientes internacionales.</p>
+                        <p>Ofrecemos atención en <strong>Español e Inglés</strong>. Nuestro equipo está capacitado para atender clientes internacionales con fluidez en ambos idiomas.</p>
                     </div>
                 </div>
 
-                <div class="faq-item">
+                <div class="faq-item" data-category="general">
                     <button class="faq-question">
-                        <span>¿Me cobran por la cotización?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>No, las cotizaciones son completamente gratuitas y sin compromiso de compra. Queremos que tenga toda la información antes de decidir.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>¿Qué información necesitan para cotizar?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p><strong>Para una cotización precisa necesitamos:</strong><br>
-                        • Ficha técnica, diseño, bosquejo o foto de inspiración<br>
-                        • Técnica de tejido deseada (jersey, jacquard, punto, etc.)<br>
-                        • Tipo de fibra y calidad requerida<br>
-                        • Cantidad aproximada (aunque el MOQ final se determina con la muestra)<br>
-                        • Temporada de producción (alta: Mayo-Nov, baja: Dic-Abr)<br>
-                        <em>Nota: Primero desarrollamos una muestra para determinar costos exactos.</em></p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
+                        <i class="fas fa-phone-alt"></i>
                         <span>¿Puedo hablar con alguien inmediatamente?</span>
-                        <span class="faq-icon">+</span>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
                     </button>
                     <div class="faq-answer">
-                        <p>WhatsApp (+51 948 734 691) es la vía más rápida durante horario laboral (Lun-Vie 9am-6pm GMT-5). También puede llamarnos directamente al +51 985 070 700.</p>
+                        <p><strong>WhatsApp (+51 948 734 691)</strong> es la vía más rápida durante horario laboral (Lun-Vie 9am-6pm GMT-5). También puede llamarnos directamente al <strong>+51 985 070 700</strong>.</p>
                     </div>
                 </div>
 
-                <div class="faq-item">
+                <div class="faq-item" data-category="general">
                     <button class="faq-question">
-                        <span>¿Qué pasa después de enviar el formulario?</span>
-                        <span class="faq-icon">+</span>
+                        <i class="fas fa-globe-americas"></i>
+                        <span>¿Trabajan con clientes de otros países?</span>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
                     </button>
                     <div class="faq-answer">
+                        <p>Sí, trabajamos con clientes de todo el mundo. Tenemos experiencia exportando a América del Norte, Europa, Asia y Oceanía. Manejamos toda la documentación de exportación necesaria.</p>
+                    </div>
+                </div>
+
+                <!-- COTIZACIÓN -->
+                <div class="faq-item" data-category="cotizacion">
+                    <button class="faq-question">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>¿Me cobran por la cotización?</span>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>No, las cotizaciones son completamente gratuitas</strong> y sin compromiso de compra. Queremos que tenga toda la información antes de decidir trabajar con nosotros.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="cotizacion">
+                    <button class="faq-question">
+                        <i class="fas fa-list-check"></i>
+                        <span>¿Qué información necesitan para cotizar?</span>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>Para una cotización precisa necesitamos:</strong></p>
+                        <ul>
+                            <li>Ficha técnica, diseño, bosquejo o foto de inspiración</li>
+                            <li>Técnica de tejido deseada (jersey, jacquard, punto, etc.)</li>
+                            <li>Tipo de fibra y calidad requerida</li>
+                            <li>Cantidad aproximada (el MOQ final se determina con la muestra)</li>
+                            <li>Temporada de producción preferida</li>
+                        </ul>
+                        <p><em>Nota: Primero desarrollamos una muestra para determinar costos exactos.</em></p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="cotizacion">
+                    <button class="faq-question">
+                        <i class="fas fa-route"></i>
+                        <span>¿Qué pasa después de enviar el formulario?</span>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>Proceso paso a paso:</strong></p>
                         <ol>
                             <li>Recibe confirmación automática por email</li>
                             <li>Nuestro equipo revisa su solicitud (24-48h)</li>
-                            <li>Lo contactamos con una propuesta inicial alineada a su necesidad</li>
-                            <li>Ajustamos la oferta inicial según el feedback que nos provea</li>
-                            <li>Enviamos oferta formal detallada según su requerimiento</li>
+                            <li>Lo contactamos con una propuesta inicial</li>
+                            <li>Ajustamos la oferta según su feedback</li>
+                            <li>Enviamos oferta formal detallada</li>
                         </ol>
                     </div>
                 </div>
 
+                <div class="faq-item" data-category="cotizacion">
+                    <button class="faq-question">
+                        <i class="fas fa-ruler-combined"></i>
+                        <span>¿Cuál es el volumen mínimo de orden (MOQ)?</span>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>El MOQ varía según el producto y complejidad. <strong>No hay un mínimo fijo</strong>. Primero desarrollamos una muestra para determinar el MOQ específico de su proyecto. Esto garantiza un precio justo para ambas partes.</p>
+                    </div>
+                </div>
+
+                <!-- MUESTRAS -->
+                <div class="faq-item" data-category="muestras">
+                    <button class="faq-question">
+                        <i class="fas fa-box"></i>
+                        <span>¿Cuánto cuesta solicitar muestras?</span>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>El costo depende del tipo de muestra:</p>
+                        <ul>
+                            <li><strong>Hilado de stock:</strong> Costo de material + envío</li>
+                            <li><strong>Tejido personalizado:</strong> 50-100% adelantado según complejidad</li>
+                            <li><strong>Procesamiento:</strong> 1-5 días hábiles</li>
+                        </ul>
+                        <p>Le enviamos cotización detallada antes de procesar.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="muestras">
+                    <button class="faq-question">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>¿Cuánto demora recibir las muestras?</span>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>Tiempo total = Procesamiento + Envío</strong></p>
+                        <ul>
+                            <li>Procesamiento: 1-5 días (según complejidad)</li>
+                            <li>Envío internacional: 3-7 días (courier)</li>
+                        </ul>
+                        <p><em>Mejor época: Diciembre-Agosto (temporada baja)</em></p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="muestras">
+                    <button class="faq-question">
+                        <i class="fas fa-undo"></i>
+                        <span>¿Puedo solicitar modificaciones a la muestra?</span>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, el desarrollo de muestras es un <strong>proceso iterativo</strong>. Puede solicitar ajustes hasta lograr el producto deseado. Cada iteración tiene su costo y tiempo asociado, que le informamos previamente.</p>
+                    </div>
+                </div>
+
+                <!-- ENVÍOS -->
+                <div class="faq-item" data-category="envios">
+                    <button class="faq-question">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>¿Hacen envíos internacionales?</span>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, exportamos a todo el mundo. Trabajamos con couriers internacionales confiables (DHL, FedEx, UPS). El costo de envío se cotiza según destino y peso.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="envios">
+                    <button class="faq-question">
+                        <i class="fas fa-file-invoice"></i>
+                        <span>¿Manejan la documentación de exportación?</span>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, nos encargamos de toda la <strong>documentación de exportación</strong> desde Perú (factura comercial, packing list, certificado de origen si es necesario). Usted se encarga del despacho de importación en su país.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="envios">
+                    <button class="faq-question">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>¿Los envíos están asegurados?</span>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Los envíos por courier incluyen seguro básico. Para pedidos grandes, recomendamos seguro adicional (opcional). Discutimos estas opciones al confirmar el pedido.</p>
+                    </div>
+                </div>
+
+                <!-- MÁS PREGUNTAS -->
+                <div class="faq-item" data-category="general">
+                    <button class="faq-question">
+                        <i class="fas fa-user-shield"></i>
+                        <span>¿Mi información está protegida?</span>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutamente. Toda la información que nos proporciona es <strong>100% confidencial</strong>. No compartimos datos de clientes con terceros. Podemos firmar NDA si su proyecto lo requiere.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="general">
+                    <button class="faq-question">
+                        <i class="fas fa-calendar-week"></i>
+                        <span>¿Cuál es su horario de atención?</span>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>Lunes a Viernes: 9:00 AM - 6:00 PM (GMT-5, hora de Perú)</strong><br>
+                        Los formularios pueden enviarse 24/7 y serán procesados en horario laboral. Para WhatsApp, el mejor horario es durante horas de oficina.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="cotizacion">
+                    <button class="faq-question">
+                        <i class="fas fa-handshake"></i>
+                        <span>¿Trabajan con diseñadores y pequeñas marcas?</span>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, trabajamos con todo tipo de clientes: desde diseñadores independientes hasta grandes marcas. Nos adaptamos a diferentes volúmenes y necesidades. Lo importante es que el proyecto sea viable técnica y comercialmente.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="faq-no-results" style="display: none;">
+                <div class="no-results-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>No se encontraron resultados</h3>
+                <p>No hay preguntas que coincidan con su búsqueda. Intente con otras palabras clave o seleccione una categoría diferente.</p>
+            </div>
+
+            <div class="faq-cta">
+                <h3>¿No encontró lo que buscaba?</h3>
+                <p>Nuestro equipo está listo para responder cualquier pregunta específica sobre su proyecto</p>
+                <div class="faq-cta-buttons">
+                    <a href="#cotizacion" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Enviar Consulta
+                    </a>
+                    <a href="https://wa.me/51948734691" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Directo
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -575,17 +901,17 @@
                 <div class="footer-col">
                     <h4>PRODUCTOS</h4>
                     <ul>
-                        <li><a href="productos.html#hilado">Hilado grueso</a></li>
-                        <li><a href="productos.html#manufactura">Manufactura textil</a></li>
+                        <li><a href="/productos#hilado">Hilado grueso</a></li>
+                        <li><a href="/productos#manufactura">Manufactura textil</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col">
                     <h4>EMPRESA</h4>
                     <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="nosotros.html">Sobre Nosotros</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="/">Inicio</a></li>
+                        <li><a href="/nosotros">Sobre Nosotros</a></li>
+                        <li><a href="/contacto">Contacto</a></li>
                     </ul>
                 </div>
 

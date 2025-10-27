@@ -10,7 +10,7 @@
     <meta property="og:title" content="Productos - Hilado Artesanal y Manufactura | Alpaca Link">
     <meta property="og:description" content="Catálogo B2B de fibra de alpaca premium. Hilado artesanal y servicios de manufactura textil desde Perú.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://alpaca-link.com/productos.html">
+    <meta property="og:url" content="https://alpaca-link.com/productos">
 
     <title>Productos | Hilado Artesanal y Manufactura Textil de Alpaca | Alpaca Link</title>
 
@@ -28,8 +28,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css">
 
-    <!-- CSS - Global + Page Specific -->
+    <!-- CSS - Global + Components + Page Specific -->
     <link rel="stylesheet" href="src/css/alpaca-global.css">
+    <link rel="stylesheet" href="src/css/alpaca-components.css">
     <link rel="stylesheet" href="src/css/productos-styles.css">
 </head>
 <body>
@@ -39,17 +40,17 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="/">
                         <img src="alpaca-link-images/alpaca-link-logo-no-background-png.png" alt="Alpaca Link Logo">
                     </a>
                 </div>
 
                 <nav class="main-nav" id="mainNav">
                     <ul>
-                        <li><a href="index.html" class="nav-link">INICIO</a></li>
-                        <li><a href="nosotros.html" class="nav-link">NOSOTROS</a></li>
-                        <li><a href="productos.html" class="nav-link active">PRODUCTOS</a></li>
-                        <li><a href="contacto.html" class="nav-link">CONTACTO</a></li>
+                        <li><a href="/" class="nav-link">INICIO</a></li>
+                        <li><a href="/nosotros" class="nav-link">NOSOTROS</a></li>
+                        <li><a href="/productos" class="nav-link active">PRODUCTOS</a></li>
+                        <li><a href="/contacto" class="nav-link">CONTACTO</a></li>
                     </ul>
                 </nav>
 
@@ -62,7 +63,7 @@
                             <img src="alpaca-link-images/bandera-ingles.png" alt="English"> EN
                         </button>
                     </div>
-                    <a href="contacto.html" class="btn btn-primary">INICIAR EVALUACIÓN</a>
+                    <a href="/contacto" class="btn btn-primary">INICIAR EVALUACIÓN</a>
                 </div>
 
                 <button class="mobile-menu-toggle" id="mobileMenuToggle">
@@ -74,120 +75,32 @@
         </div>
     </header>
 
-    <!-- ========== BREADCRUMB ========== -->
-    <div class="breadcrumb">
-        <div class="container">
-            <nav aria-label="breadcrumb">
-                <a href="index.html">Inicio</a>
-                <span class="separator">/</span>
-                <span class="current">Productos</span>
-            </nav>
-        </div>
-    </div>
-
     <!-- ========== HERO SECTION ========== -->
     <section class="productos-hero">
         <div class="hero-background">
-            <div class="hero-pattern"></div>
+            <img src="src/images/real-photos/artisan-yarn-selection.jpg" alt="Artesana seleccionando hilados de alpaca premium - productos B2B" class="hero-image">
             <div class="hero-overlay"></div>
         </div>
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-pretitle">CATÁLOGO B2B</span>
+                <h1>PRODUCTOS DE<br><span class="hero-highlight">FIBRA DE ALPACA</span></h1>
+                <p class="hero-description">Especificaciones técnicas completas | Hilado artesanal y manufactura | Calidad premium</p>
 
-        <div class="hero-content">
-            <div class="container">
-                <!-- Quality Badges -->
-                <div class="quality-badges">
-                    <span class="quality-badge">
-                        <i class="fas fa-handshake"></i>
-                        Aliados: Inca Tops & Michell
-                    </span>
-                    <span class="quality-badge">
-                        <i class="fas fa-truck-fast"></i>
-                        Envío Internacional
-                    </span>
-                    <span class="quality-badge">
-                        <i class="fas fa-users"></i>
-                        150+ Artesanos
-                    </span>
-                </div>
-
-                <!-- Main Title -->
-                <div class="hero-title-wrapper">
-                    <span class="hero-pretitle">CATÁLOGO EXCLUSIVO</span>
-                    <h1 class="hero-title">
-                        PRODUCTOS DE<br>
-                        <span class="hero-highlight">FIBRA DE ALPACA</span>
-                    </h1>
-                    <p class="hero-subtitle">
-                        Especificaciones técnicas detalladas para compradores mayoristas
-                    </p>
-                </div>
-
-                <!-- Key Features -->
-                <div class="hero-features">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-truck-fast"></i>
-                        </div>
-                        <div class="feature-text">
-                            <strong>Entrega Global</strong>
-                            <span>6-10 semanas</span>
-                        </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">17-23μm</div>
+                        <div class="stat-label">Finura Baby Alpaca</div>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-boxes-stacked"></i>
-                        </div>
-                        <div class="feature-text">
-                            <strong>MOQ Flexible</strong>
-                            <span>Desde 5kg</span>
-                        </div>
+                    <div class="stat-item">
+                        <div class="stat-number">150+</div>
+                        <div class="stat-label">Artesanos</div>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-palette"></i>
-                        </div>
-                        <div class="feature-text">
-                            <strong>+22 Colores</strong>
-                            <span>Naturales</span>
-                        </div>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-microscope"></i>
-                        </div>
-                        <div class="feature-text">
-                            <strong>18-29 μm</strong>
-                            <span>Finura</span>
-                        </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5kg</div>
+                        <div class="stat-label">MOQ Flexible</div>
                     </div>
                 </div>
-
-                <!-- CTA Buttons -->
-                <div class="hero-actions">
-                    <a href="#hilado" class="btn btn-hero-primary">
-                        <i class="fas fa-search"></i>
-                        <span>Explorar Productos</span>
-                    </a>
-                </div>
-
-                <!-- Quick Navigation -->
-                <div class="quick-nav">
-                    <a href="#hilado" class="quick-nav-item">
-                        <span class="nav-number">01</span>
-                        <span class="nav-text">Hilado Artesanal</span>
-                    </a>
-                    <a href="#manufactura" class="quick-nav-item">
-                        <span class="nav-number">02</span>
-                        <span class="nav-text">Manufactura</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Scroll Indicator -->
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
             </div>
         </div>
     </section>
@@ -244,8 +157,10 @@
 
                             <div class="product-grid">
                                 <div class="product-image-col">
-                                    <img src="src/images/products/hilado-artesanal-nuevo.png" alt="Hilado Simple" loading="lazy">
-                                    <p class="image-caption">Madejas de hilado simple en diferentes colores</p>
+                                    <div class="producto-imagen">
+                                        <img src="src/images/real-photos/artisan-yarn-selection.jpg" alt="Artesana seleccionando hilado artesanal de alpaca" loading="lazy">
+                                    </div>
+                                    <p class="image-caption">Selección artesanal de hilados en colores naturales</p>
                                 </div>
 
                                 <div class="product-info-col">
@@ -262,7 +177,7 @@
                                         </div>
                                         <div class="spec-item">
                                             <span class="spec-label">Composición:</span>
-                                            <span class="spec-value">100% alpaca o mezclas</span>
+                                            <span class="spec-value">100% alpaca</span>
                                         </div>
                                         <div class="spec-item">
                                             <span class="spec-label">Presentación:</span>
@@ -272,9 +187,8 @@
 
                                     <h4 class="mt-2">COLORES</h4>
                                     <ul class="properties-list">
-                                        <li>Naturales: 22 tonos sin teñir</li>
-                                        <li>Teñido natural: Cochinilla, molle, tara</li>
-                                        <li>Teñido custom: Según Pantone</li>
+                                        <li>Naturales</li>
+                                        <li>Teñido natural: evaluación de color</li>
                                     </ul>
                                 </div>
                             </div>
@@ -311,7 +225,7 @@
                             </div>
 
                             <div class="product-cta">
-                                <a href="contacto.html" class="btn btn-primary btn-evaluation">
+                                <a href="/contacto" class="btn btn-primary btn-evaluation">
                                     <i class="fas fa-microscope"></i> SOLICITAR EVALUACIÓN DE PROYECTO
                                 </a>
                             </div>
@@ -325,8 +239,10 @@
 
                             <div class="product-grid">
                                 <div class="product-image-col">
-                                    <img src="src/images/products/proceso-esquila.png" alt="Hilado Retorcido" loading="lazy">
-                                    <p class="image-caption">Hilado retorcido de alta resistencia</p>
+                                    <div class="producto-imagen">
+                                        <img src="src/images/real-photos/artisan-weaving-loom.jpg" alt="Artesanas en producción textil con telar" loading="lazy">
+                                    </div>
+                                    <p class="image-caption">Proceso de tejido artesanal de hilado retorcido</p>
                                 </div>
 
                                 <div class="product-info-col">
@@ -343,7 +259,7 @@
                                         </div>
                                         <div class="spec-item">
                                             <span class="spec-label">Composición:</span>
-                                            <span class="spec-value">100% alpaca o mezclas</span>
+                                            <span class="spec-value">100% alpaca</span>
                                         </div>
                                         <div class="spec-item">
                                             <span class="spec-label">Presentación:</span>
@@ -361,7 +277,7 @@
                             </div>
 
                             <div class="product-cta">
-                                <a href="contacto.html" class="btn btn-primary btn-evaluation">
+                                <a href="/contacto" class="btn btn-primary btn-evaluation">
                                     <i class="fas fa-microscope"></i> SOLICITAR EVALUACIÓN DE PROYECTO
                                 </a>
                             </div>
@@ -375,8 +291,10 @@
 
                             <div class="product-grid">
                                 <div class="product-image-col">
-                                    <img src="src/images/products/colores-naturales.png" alt="Hilado Peinado" loading="lazy">
-                                    <p class="image-caption">Hilado peinado en colores naturales</p>
+                                    <div class="producto-imagen">
+                                        <img src="src/images/real-photos/artisan-fiber-combing.jpg" alt="Artesano realizando el peinado de fibra de alpaca" loading="lazy">
+                                    </div>
+                                    <p class="image-caption">Proceso artesanal de peinado de fibra premium</p>
                                 </div>
 
                                 <div class="product-info-col">
@@ -389,7 +307,7 @@
                                         </div>
                                         <div class="spec-item">
                                             <span class="spec-label">Finura:</span>
-                                            <span class="spec-value">18-22 μm</span>
+                                            <span class="spec-value">17-23 μm</span>
                                         </div>
                                         <div class="spec-item">
                                             <span class="spec-label">Suavidad:</span>
@@ -411,9 +329,54 @@
                             </div>
 
                             <div class="product-cta">
-                                <a href="contacto.html" class="btn btn-primary btn-evaluation">
+                                <a href="/contacto" class="btn btn-primary btn-evaluation">
                                     <i class="fas fa-microscope"></i> SOLICITAR EVALUACIÓN DE PROYECTO
                                 </a>
+                            </div>
+                        </article>
+
+                        <!-- ========== VARIEDAD DE HILADOS ========== -->
+                        <article class="yarn-variety-section" style="background: #f8f8f8; padding: 50px 40px; margin-top: 60px; border: 3px solid #e5e5e5; border-top: 5px solid var(--color-primary);">
+                            <div style="max-width: 900px; margin: 0 auto;">
+                                <div style="text-align: center; margin-bottom: 40px;">
+                                    <h3 style="color: var(--color-secondary); font-size: 1.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 15px;">Variedad de Hilados Disponibles</h3>
+                                    <p style="color: var(--color-text); font-size: 1.05rem; line-height: 1.7;">Del hilado artesanal tradicional a la producción industrial de volumen</p>
+                                </div>
+
+                                <div style="background: var(--color-white); padding: 35px; border-left: 5px solid var(--color-primary); margin-bottom: 30px;">
+                                    <h4 style="color: var(--color-primary); font-size: 1.3rem; font-weight: 700; margin-bottom: 15px; text-transform: uppercase;">
+                                        <i class="fas fa-star"></i> Nuestra Especialidad: Hilado Artesanal Hecho a Mano
+                                    </h4>
+                                    <p style="color: var(--color-text); font-size: 1rem; line-height: 1.7; margin: 0;">
+                                        Trabajamos principalmente con artesanos locales en Puno, produciendo hilado 100% a mano con técnicas tradicionales transmitidas por generaciones. Este es nuestro producto estrella y el corazón de nuestra operación.
+                                    </p>
+                                </div>
+
+                                <div style="background: var(--color-white); padding: 35px; border-left: 5px solid var(--color-secondary); margin-bottom: 30px;">
+                                    <h4 style="color: var(--color-secondary); font-size: 1.2rem; font-weight: 700; margin-bottom: 20px; text-transform: uppercase;">
+                                        También Trabajamos con Aliados Estratégicos para Producción Industrial
+                                    </h4>
+                                    <p style="color: var(--color-text); font-size: 0.95rem; line-height: 1.7; margin-bottom: 25px;">
+                                        Para proyectos de mayor volumen o requisitos industriales específicos, colaboramos con los líderes mundiales en fibra de alpaca:
+                                    </p>
+
+                                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 25px;">
+                                        <div style="text-align: center; padding: 25px; background: #f8f8f8; border: 2px solid #e5e5e5; transition: all 0.3s ease;">
+                                            <img src="src/images/partners/inca-tops-logo.svg" alt="INCA TOPS - Líder mundial en fibra de alpaca" style="max-width: 150px; height: auto; margin-bottom: 15px; filter: grayscale(40%); opacity: 0.9;">
+                                            <p style="font-size: 0.9rem; color: var(--color-text-light); font-style: italic; margin: 0;">Líder mundial en fibra de alpaca</p>
+                                        </div>
+                                        <div style="text-align: center; padding: 25px; background: #f8f8f8; border: 2px solid #e5e5e5; transition: all 0.3s ease;">
+                                            <img src="src/images/partners/michell-logo.png" alt="Grupo Michell - Excelencia en hilados" style="max-width: 150px; height: auto; margin-bottom: 15px; filter: grayscale(40%); opacity: 0.9;">
+                                            <p style="font-size: 0.9rem; color: var(--color-text-light); font-style: italic; margin: 0;">Grupo Michell - Excelencia en hilados</p>
+                                        </div>
+                                    </div>
+
+                                    <div style="background: rgba(191, 17, 32, 0.05); border-left: 4px solid var(--color-primary); padding: 20px; margin-top: 25px;">
+                                        <p style="color: var(--color-text); font-size: 0.95rem; line-height: 1.6; margin: 0;">
+                                            <strong style="color: var(--color-primary);">Nota:</strong> Esta flexibilidad nos permite atender desde pequeños proyectos artesanales hasta grandes producciones industriales, siempre manteniendo los más altos estándares de calidad.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </article>
 
@@ -431,7 +394,9 @@
 
                             <div class="manufactura-grid">
                                 <div class="manufactura-card">
-                                    <img src="src/images/products/home-deco.png" alt="Home-deco" loading="lazy">
+                                    <div class="producto-imagen">
+                                        <img src="src/images/real-photos/garments-fabrics-display.jpg" alt="Mantas y textiles de alpaca para decoración del hogar" loading="lazy">
+                                    </div>
                                     <h4>HOME-DECO</h4>
                                     <ul>
                                         <li>Mantas</li>
@@ -440,14 +405,16 @@
                                         <li>Runners</li>
                                         <li>Cortinas</li>
                                     </ul>
-                                    <div style="background: #F2F2F2; padding: 10px; margin-top: 10px; border-radius: 5px;">
+                                    <div class="capacities-box">
                                         <small><strong>Capacidad:</strong> 50-300 unidades/mes<br>
-                                        <strong>Producción:</strong> 7-10 piezas/día</small>
+                                        <strong>Todas las técnicas de tejido</strong></small>
                                     </div>
                                 </div>
 
                                 <div class="manufactura-card">
-                                    <img src="src/images/products/accesorios.png" alt="Accesorios" loading="lazy">
+                                    <div class="producto-imagen">
+                                        <img src="src/images/real-photos/fabric-quality-closeup.jpg" alt="Detalle de calidad premium de tejido de alpaca para accesorios" loading="lazy">
+                                    </div>
                                     <h4>ACCESORIOS PARA EL FRÍO</h4>
                                     <ul>
                                         <li>Gorras</li>
@@ -457,14 +424,16 @@
                                         <li>Chalinas</li>
                                         <li>Bufandas</li>
                                     </ul>
-                                    <div style="background: #F2F2F2; padding: 10px; margin-top: 10px; border-radius: 5px;">
-                                        <small><strong>Capacidad:</strong> 10-20 piezas/día por tejedora<br>
+                                    <div class="capacities-box">
+                                        <small><strong>Capacidad:</strong> 200-600 unidades/mes<br>
                                         <strong>Todas las técnicas de tejido</strong></small>
                                     </div>
                                 </div>
 
                                 <div class="manufactura-card">
-                                    <img src="src/images/products/prendas.png" alt="Prendas" loading="lazy">
+                                    <div class="producto-imagen">
+                                        <img src="src/images/real-photos/garments-variety.jpg" alt="Variedad de prendas de alpaca - sweaters y textiles" loading="lazy">
+                                    </div>
                                     <h4>PRENDAS</h4>
                                     <ul>
                                         <li>Sweaters en jersey</li>
@@ -474,9 +443,9 @@
                                         <li>Sacos</li>
                                         <li>Pantalones</li>
                                     </ul>
-                                    <div style="background: #F2F2F2; padding: 10px; margin-top: 10px; border-radius: 5px;">
+                                    <div class="capacities-box">
                                         <small><strong>Capacidad:</strong> 50-200 unidades/mes<br>
-                                        <strong>Jersey:</strong> 3-5 chompas/día</small>
+                                        <strong>Todas las técnicas de tejido</strong></small>
                                     </div>
                                 </div>
                             </div>
@@ -519,20 +488,22 @@
 
                             <div class="capabilities-section">
                                 <h3>CAPACIDADES TÉCNICAS</h3>
-                                <div class="two-col-grid">
+                                <div class="product-grid">
+                                    <div class="product-image-col">
+                                        <img src="src/images/real-photos/artisan-fabric-display.jpg" alt="Artesana mostrando tejidos y productos de alpaca" loading="lazy">
+                                        <p class="image-caption">Exhibición artesanal de productos terminados</p>
+                                    </div>
                                     <div>
                                         <h5>Técnicas disponibles:</h5>
                                         <ul class="check-list">
                                             <li>✓ Tejido a mano (hand knitting)</li>
-                                            <li>✓ Tejido en telar tradicional</li>
+                                            <li>✓ Tejido en máquina artesanal</li>
                                             <li>✓ Crochet</li>
                                             <li>✓ Bordado tradicional andino</li>
                                             <li>✓ Aplicaciones</li>
                                             <li>✓ Acabados especiales</li>
                                         </ul>
-                                    </div>
-                                    <div>
-                                        <h5>Nuestros números:</h5>
+                                        <h5 class="mt-2">Nuestros números:</h5>
                                         <ul class="check-list">
                                             <li>150+ artesanos disponibles</li>
                                             <li>Supervisión y control de calidad</li>
@@ -567,7 +538,7 @@
                                     </div>
                                     <div class="spec-item">
                                         <span class="spec-label">Temporada alta:</span>
-                                        <span class="spec-value">Mayo-Noviembre</span>
+                                        <span class="spec-value">Marzo-Noviembre</span>
                                     </div>
                                 </div>
                                 <div style="background: #F2F2F2; border-left: 4px solid #BF1120; padding: 15px; margin-top: 20px;">
@@ -576,7 +547,7 @@
                             </div>
 
                             <div class="product-cta">
-                                <a href="contacto.html" class="btn btn-primary btn-evaluation">
+                                <a href="/contacto" class="btn btn-primary btn-evaluation">
                                     <i class="fas fa-microscope"></i> INICIAR EVALUACIÓN DE PROYECTO
                                 </a>
                             </div>
@@ -616,7 +587,7 @@
                                         <td>1-3 días</td>
                                         <td>Por evaluar</td>
                                         <td>Según pedido</td>
-                                        <td>Dic-Abr (baja)</td>
+                                        <td>Dic-Ago (baja)</td>
                                     </tr>
                                     <tr class="table-divider">
                                         <td colspan="5"></td>
@@ -626,21 +597,21 @@
                                         <td>1-3 días</td>
                                         <td>Variable</td>
                                         <td>10-20 pz/día</td>
-                                        <td>Dic-Abr (baja)</td>
+                                        <td>Dic-Ago (baja)</td>
                                     </tr>
                                     <tr>
                                         <td><strong>Prendas Jersey</strong></td>
                                         <td>1-3 días</td>
                                         <td>30-60 días</td>
                                         <td>50-200 unidades</td>
-                                        <td>Dic-Abr (baja)</td>
+                                        <td>Dic-Ago (baja)</td>
                                     </tr>
                                     <tr>
                                         <td><strong>Home-deco</strong></td>
                                         <td>1-5 días</td>
                                         <td>Variable</td>
                                         <td>50-300 unidades</td>
-                                        <td>Dic-Abr (baja)</td>
+                                        <td>Dic-Ago (baja)</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -677,17 +648,17 @@
                 <div class="footer-col">
                     <h4>PRODUCTOS</h4>
                     <ul>
-                        <li><a href="productos.html#hilado">Hilado grueso</a></li>
-                        <li><a href="productos.html#manufactura">Manufactura textil</a></li>
+                        <li><a href="/productos#hilado">Hilado grueso</a></li>
+                        <li><a href="/productos#manufactura">Manufactura textil</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col">
                     <h4>EMPRESA</h4>
                     <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="nosotros.html">Sobre Nosotros</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="/">Inicio</a></li>
+                        <li><a href="/nosotros">Sobre Nosotros</a></li>
+                        <li><a href="/contacto">Contacto</a></li>
                     </ul>
                 </div>
 

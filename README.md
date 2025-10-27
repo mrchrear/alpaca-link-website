@@ -37,7 +37,7 @@ alpaca-link-website/
 
 ### 1. Hilado Grueso de Alpaca
 - 100% fibra de alpaca pura
-- 22+ colores naturales disponibles
+- Colores naturales disponibles
 - Presentación: Madejas y ovillos
 - Ideal para tejido rápido
 
